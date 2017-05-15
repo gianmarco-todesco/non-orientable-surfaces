@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <title>Superfici ad una sola faccia</title>
+    </head>
+    <style>
+      html, body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #renderCanvas {
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+        cursor:pointer;
+      }
+      
+      h1 {
+        margin:0;
+        padding:5px;
+        font-family : "Impact";        
+        font-size: 80px;
+      }
+      h2 {
+        margin:0;
+        padding:5px;        
+        font-size: 30px;
+        font-style:italic;
+      }
+        
+    </style>
+    <script src="https://code.jquery.com/pep/0.4.2/pep.js"></script>
+    <script src="js/libs/babylon.js"></script>
+    <script src="js/libs/babylon.canvas2d.js"></script>
+    <script src="js/libs/fpsmeter.min.js"></script>
+   <body>
+   <canvas id="renderCanvas"></canvas>
+   <script>
+    var meter = new FPSMeter({
+        theme: 'light',
+        graph:   1,
+        });
+    </script>
+   <script src="js/lib.js"></script>
+   <script src="js/cord.js"></script>
+   <script src="js/punched_moebius.js"></script>
+   <script src="js/simple_moebius.js"></script>
+   <script src="js/spherical_triangle.js"></script>
+   <script src="js/klein_bottle.js"></script>
+   <script src="js/title_page.js"></script>
+   <script src="js/moebius_pages.js"></script>
+   <script src="js/pp_pages.js"></script>
+   <script src="js/kleinbottle_pages.js"></script>
+   <script src="js/main.js"></script>
+   </body>
+</html>

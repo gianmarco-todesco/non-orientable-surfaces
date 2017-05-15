@@ -547,7 +547,7 @@ moebiusWithWheelsPage.keydown = function(e) {
     if(e.key=="+") this.addWheel();
     else if(e.key=="-") this.removeWheel();
     else if(e.key==">") this.speed += 0.01;
-    else if(e.key=="<") { if(this.speed>0.01) this.speed -= 0.01; } 
+    else if(e.key=="<") { this.speed = Math.max(0, this.speed - 0.01); } 
     else console.log(e);
 }
 

@@ -138,7 +138,7 @@ window.addEventListener("mousemove", function(e) {
 });
 
 window.addEventListener("wheel", function(e) {
-    camera.radius += 0.1*e.deltaY;
+    camera.radius += 0.02*e.deltaY;
 });
 
 window.addEventListener("keydown", function(e) {
